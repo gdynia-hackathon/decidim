@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://try.decidim.org/api",
+  uri: process.env.API_GRAPHQL,
   cache: new InMemoryCache(),
 });
 
